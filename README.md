@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/612192520.svg)](https://zenodo.org/badge/latestdoi/612192520)
+
+
 # GoldenStandardDataset
 Repository with the data of Golden Standard parts characterization
 
