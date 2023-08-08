@@ -7,7 +7,7 @@
 Workflow and datasets from the parts characterisation from Golden Standard Moclo kit.
 
 In this repository you will find 3 jupyter notebooks:
-- **paper_datasets_workflow**: this script allows you to explore our datasets and follow the same computational analysis we performed to quantify parts activity from growth and fluorescence data. You can find it here: <a target="_blank" <a target="_blank" href="https://colab.research.google.com/github/SBGlab/GoldenStandardDataset/blob/main/paper_datasets_workflow.ipynb">
+- **paper_datasets_workflow**: this script allows you to explore our datasets and follow the same computational analysis we performed to quantify parts activity from growth and fluorescence data. You can find it here: <a target="_blank" href="https://colab.research.google.com/github/SBGlab/GoldenStandardDataset/blob/main/paper_datasets_workflow.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
