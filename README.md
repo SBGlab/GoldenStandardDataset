@@ -19,7 +19,7 @@ In this repository you will find 3 jupyter notebooks:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-*The structure for .csv files is simple, leave first first cell empty and fill the first column with time data, first row with well data and each row with the measurements for that well and time point. Make sure you get a csv file separated by commas.
+*The structure for .csv files is simple, leave first first cell empty and fill the first column with time data, first row with well data and each row with the measurements for that well and time point. Make sure you get a csv file separated by commas. Example files are provided within the custom example folder.
 
 Note: You can upload the full 96 well plate data, unused wells will be automatically discarded if htey are not in the sample info file.
 
