@@ -149,3 +149,53 @@ def spot_removed_wells(trimmed_df_dict):
         if well not in wells_in_df:
             wells_not_in_df.append(well)
     return wells_not_in_df
+
+
+#function to plot datasets
+def plot_dataset(dataset):
+  for sample in samples_def:
+      wells = samples_def[sample]
+      dataset_raw = DF_def[dataset]
+      dataset_means = DF_means[dataset]
+      dataset_stds = DF_stds[dataset]
+
+      fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15,5))
+      fig.suptitle(sample)
+      ax2.axhline(y=0, c='black', ls='--', alpha=0.5)
+      ax2.plot(time, dataset_means[sample], 'b-')
+      ax2.fill_between(time, dataset_means[sample]+dataset_stds[sample], dataset_means[sample]-dataset_stds[sample], alpha=0.5)
+      ax2.set_title((sample + ' mean + std'))
+
+      alg_time = algorithm_tpoints_sample[sample]
+      ax2.plot(alg_time, dataset_means[sample][alg_time], 'ro')
+
+      ax1.axhline(y=0, c='black', ls='--', alpha=0.5)
+      for i in range(len(wells)):
+          ax1.plot(time, dataset_raw[wells[i]], label=wells[i])
+      ax1.set_title((sample + ' replicates'))
+
+      ax1.legend()
+      plt.show()
+
+  fig, ax = plt.subplots(figsize=(15,10))
+  for sample in samples_def:
+      alg_time = algorithm_tpoints_sample[sample]
+      ax.axhline(y=0, c='black', ls='--', alpha=0.2)
+      ax.plot(time, DF_means[dataset][sample], label=sample)
+      ax.plot(alg_time, DF_means[dataset][sample][alg_time], 'ro')
+      ax.fill_between(time, dataset_means[sample]+dataset_stds[sample], dataset_means[sample]-dataset_stds[sample], alpha=0.3)
+      ax.legend()
+      ax.set_title('Summary')
+  plt.show()
+
+#output name for export file
+def create_file(fname, format):
+    return fname + format
+
+#check correct format of input files
+def check_file(file, f):
+    file_name = list(file.keys())[0]
+    if file_name.split('.')[1] == f:
+        return True
+    else:
+        return False
