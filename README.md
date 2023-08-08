@@ -20,3 +20,7 @@ In this repository you will find 3 jupyter notebooks:
 </a>
 
 *The structure for .csv files is simple, leave first first cell empty and fill the first column with time data, first row with well data and each row with the measurements for that well and time point. Make sure you get a csv file separated by commas.
+
+Note: You can upload the full 96 well plate data, unused wells will be automatically discarded if htey are not in the sample info file.
+
+![alt text](https://github.com/SBGlab/GoldenStandardDataset/blob/main/csv_template.jpg)
