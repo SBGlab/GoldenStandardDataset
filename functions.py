@@ -152,7 +152,7 @@ def spot_removed_wells(trimmed_df_dict):
 
 
 #function to plot datasets
-def plot_dataset(dataset):
+def plot_dataset(dataset, samples_def):
   for sample in samples_def:
       wells = samples_def[sample]
       dataset_raw = DF_def[dataset]
