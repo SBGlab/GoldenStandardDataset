@@ -15,6 +15,10 @@ In this repository you will find 3 jupyter notebooks:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a> You will need to previously generate two .csv files with a given structure*: as well as sample info file, which you can easily create using the sample_info_file script.
 
+New v3: <a target="_blank" href="https://colab.research.google.com/github/SBGlab/GoldenStandardDataset/blob/main/create_sample_info_file_v3.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 - **sample_info_file**: script to easily generate sample-to-well info for processing custom experiments. We used this script also for each of our analysis. You can find it here: <a target="_blank" href="https://colab.research.google.com/github/SBGlab/GoldenStandardDataset/blob/main/create_sample_info_file.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
